@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Parts of Speech Tagging for Data Preprocessing</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+                h1{
+                        border: 5px solid rgb(56, 156, 218);
+                        background-color: lightskyblue;
+                        padding:20px;
+                }
+                .form-group{
+                        width:35%;
+                        margin: 10px auto;
+                        padding:0px;
+                }
+
+                button[type=submit] {
+                color: white;
+                text-align: center;
+                margin: 30px;
+                display: block;
+                margin-left: 44%;
+                width: 10%;
+                }
+
+                body{
+                        background-color:rgb(241, 241, 238);
+                }
+                   
+                #classname1{
+                    /* width: 70%;
+                    margin-right:50%;
+                    height:40%; */
+                    width:100%;
+                        margin: 4px 2px;
+                        padding:0px;
+                        height:39px;
+                }
+                label{
+                        font-weight: bold;
+                }
+        
+                input[type="radio"]{
+                        margin: 0 20px 0 20px;
+                }
+        </style>
+    </head>
+<body bgcolor="lightGray">
+        <h1 align="center">Parts of Speech Tagging for Data Preprocessing</h1>
+    <form action="/predict" enctype="multipart/form-data" method="post"  accept-charset="UTF-8">
+
+         <div class="form-group">
+                <label for="InputReview">Review</label>
+                <input name="text" type="text" class="form-control" id="InputReview" placeholder="Enter review">
+        </div>
+        
+        <!-- <div class="form-group">
+                <label for="InputRatings">Ratings</label><br/>
+                <label class="radio-inline">
+                        <input type="radio" name="optradio">    1
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optradio">     2
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optradio">     3
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optradio">     4
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optradio">     5
+                      </label>
+                      
+        </div>
+
+        <div class="form-group">
+                <label for="InputFeedback">Feedback</label><br/>
+                <label class="radio-inline">
+                        <input type="radio" name="optradio1">   Positive Feedback
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="optradio1">   Negative Feedback
+                      </label>
+        </div>
+       
+        <div class="form-group">
+        <label for="classname">Class Name</label>
+        <br>
+            <select id="classname1">
+                <option value="Blouse">Blouse</option>
+                <option value="dresses">Dresses</option>
+                <option value="gauge">Fine Gauge</option>
+                <option value="intimates">Intimates</option>
+                <option value="jacket">Jacket</option>
+                <option value="jeans">Jeans</option>
+                <option value="knits">Knits</option>
+                <option value="layering">Layering</option>
+                <option value="leg wear">Leg wear</option>
+                <option value="lounge">Lounge</option>
+                <option value="outwear">Out wear</option>
+                <option value="pants">Pants</option>
+                <option value="shorts">Shorts</option>
+                <option value="sleep">Sleep</option>
+                <option value="skirts">Skirts</option>
+                <option value="sweater">Sweater</option>
+                <option value="swim">Swim</option>
+                <option value="trend">Trend</option>
+</select>
+</div> -->
+
+
+               <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
